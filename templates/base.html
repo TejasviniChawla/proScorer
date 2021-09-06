@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>ProScorer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static\css\css.css">
+
+  {% block head %}{% endblock %}
+
+
+  
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">ProScorer</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">FEATURES</a>
+      <a href="#insert" class="w3-bar-item w3-button"><i class="fa fa-user"></i> INSERT</a>
+      <a href="#CHOOSE" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CHOOSE</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">FEATURES</a>
+  <a href="#insert" onclick="w3_close()" class="w3-bar-item w3-button">INSERT</a>
+  <a href="#CHOOSE" onclick="w3_close()" class="w3-bar-item w3-button">CHOOSE</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px" style="background-image: url(static/bgimage.jpg);">
+    <span class="w3-jumbo w3-hide-small">ProScorer</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Perfect your revision with this smart resource provider</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Start Learning!</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">KEY FEATURES OF ProScorer</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">WHAT?</p>
+      <p>Smartly generates fill in the blank questions from any given text from a chapter. Making it the best way to get an intricate and thorough understanding of the chapter and make sure students never lose a mark</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-bars w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">WHERE?</p>
+      <p> This would be a great help in revison for tests, especially for boards 1. Helps students scale greater heights by giving them the most perfect, most detailed and most accurate rivison they could ask for.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">HOW?</p>
+      <p>When the user inputs the paragraph, the program selects 5 random lines from it, after that, it selects an important word from each line and then relaces the word with a blank, giving us a fill up question.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Languages</p>
+      <p> nltk package in python was used to enable it to do the processing and the website was implemented through flask and html.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" >
+  <div class="w3-row-padding">
+    <div class="connector">
+      <center>
+    <div class="w3-col m6">
+      <h3 style="font-size: 3em">Insert text paragraphs.</h3>
+      <p style="font-size: 1.5em">Can't find the textbook/chapter you are looking for? don't worry, just copy-paste the chapter over here, and we'll generate the question/ answers for you!</p>
+      <p style="font-size: 1.5em"><a href="#insert" class="w3-button w3-black"><i class="fa fa-th"> </i> Get started</a></p>
+    </div>
+    <div class="w3-col m6">
+      <h3 style="font-size: 3em">Chose chapters</h3>
+      <p style="font-size: 1.5em">Chose a chapter to be tested from from our evergrowing list of textbooks!</p>
+      <p style="font-size: 1.5em"><a href="#CHOOSE" class="w3-button w3-black"><i class="fa fa-th"> </i> Get started</a></p>
+
+
+    </div>
+  </center>
+
+  </div>
+  </div>
+</div>
+
+
+
+<!-- CHOOSE Section -->
+<div class="w3-container" style="padding:128px 16px" id="CHOOSE">
+  <h3 class="w3-center">CHOOSE FROM CHAPTERS</h3>
+  <p class="w3-center w3-large">These chapters are from NCERT class 10 english textbook</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="static\css\ch1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Letter to god">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="static\css\ch2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nelson Mandela">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="static\css\ch_3__1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="first flight">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="static\css\ch3_2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="black aeroplane">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Insert text Section -->
+<div class="w3-container w3-light-grey w3-padding-64" id="insert">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Insert Text</h3>
+      <p>If you can't find the chapter that you are looking for fear not, just copy-paste the chapter here!
+     The chapter need not be of a particular subject.</p>
+      <p>We'll generate fill-up questions that you an revise from!</p>
+      <p>These fill up questions are randomly generated</p>
+      <p>As of now, this only works on passages/ paragraphs which have more than 5 lines.</p>
+      <p>Feature of choosing chapters to revise from , coming soon!
+      </p>
+    </div>
+    <div class="w3-col m6">
+
+      {% block body %}{% endblock %}
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<center>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact" style="background-color:white;">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Delhi, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 12345</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+</center>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-hover-text-green">Tejasvini Chawla</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

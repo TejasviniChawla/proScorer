@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+{% endblock %}
+
+
+
+{% block body %}
+
+    <form action="/summary" method="get">
+        <label for="para">Description</label><br>
+        <textarea id="para" name="desc" placeholder="Insert the text here."  style="height: 130px" cols="60"> </textarea><br>
+        <input type="submit" value="Submit">
+   </form>
+{% endblock %}
+

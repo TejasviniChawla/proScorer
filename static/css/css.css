@@ -1,0 +1,27 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Merienda', cursive;
+    color: rgb(34, 32, 34)
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(bgimage.jpg) ;
+  min-height: 100%;
+
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.w3-container .w3-light-grey{
+  background-color: rgb(233, 223, 210);
+}
+
