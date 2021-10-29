@@ -7,3 +7,4 @@ Problem statement:<br>
 Proposed solution: <br>
   a one stop website that smartly generates fill in the blank questions from any given text from a chapter through nlp. This gives the students the most perfect, detailed and accurate revision they could ask for, making it the best way to get an intricate and thorough understanding of the chapter and to make sure students never lose a mark.
 
+Deployed app: https://proscorer.herokuapp.com/
