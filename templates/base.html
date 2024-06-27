@@ -22,19 +22,27 @@
 </head>
 <body>
 
- <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/style.css" rel="stylesheet" />
+            <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/style.css" rel="stylesheet" />
             <script type="module">
-            import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/chat.bundle.es.js';
+                import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/chat.bundle.es.js';
             
-            createChat({
-                webhookUrl: 'https://9csa6ee3zetifemayt55bnl1.hooks.n8n.cloud/webhook/e259b6fe-b2a9-4dbc-98a4-9a160e7ac10c/chat',
-                initialMessages: [
-                'Hello! I am Ninja', 
-                'How can I assist you today?'
-            ]
-
-            });
-            </script>
+                createChat({
+                  webhookUrl: 'http://localhost:5678/webhook/e259b6fe-b2a9-4dbc-98a4-9a160e7ac10c/chat',
+                  initialMessages: [
+                    'Hello! I am Ninja ', 
+                    'How can I assist you today?'  
+                  ],
+                  i18n: {
+                    en: {
+                      title: 'Welcome! 👋',
+                      subtitle: "We're here to assist you.",
+                      footer: '',
+                      getStarted: 'Start a Conversation',
+                      inputPlaceholder: 'Type your message here...'
+                    }
+                  }
+                });
+              </script>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
